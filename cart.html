@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .product img {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .product p {
+            margin: 0;
+        }
+
+        .product button {
+            margin-left: auto;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #0056b3;
+        }
+
+        #cart {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+
+        #cart h3 {
+            margin: 0;
+        }
+
+        #cart ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #cart ul li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+        #cart ul li span {
+            margin-right: 10px;
+        }
+
+        #cart button {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #cart button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    
+
+<div class="container">
+    <h2>Products</h2>
+    <div class="product">
+        <img src="1.jpg" alt="Product 1">
+        <p>Product 1</p>
+        <button onclick="addToCart('Product 1')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="2.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="3.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="4.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="5.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="6.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="7.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="8.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="9.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="10.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="11.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="12.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="13.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="14.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="15.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="16.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="17.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="18.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="19.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="20.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+    </div>
+    <!-- Add more products here -->
+
+    <div id="cart">
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items">
+            <!-- Cart items will be added dynamically -->
+        </ul>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+<script>
+    // Define an array to store the items in the cart
+    var cartItems = [];
+
+    // Function to add a product to the cart
+    function addToCart(productName) {
+        // Add the product to the cartItems array
+        cartItems.push(productName);
+        // Update the cart display
+        updateCart();
+    }
+
+    // Function to update the cart display
+    function updateCart() {
+        // Get the cart-items element from the HTML
+        var cartList = document.getElementById('cart-items');
+        // Clear the current content of the cart list
+        cartList.innerHTML = '';
+        // Iterate through each item in the cartItems array
+        cartItems.forEach(function(item) {
+            // Create a new list item element
+            var li = document.createElement('li');
+            // Set the inner HTML of the list item to display the item and a remove button
+            li.innerHTML = '<span>' + item + '</span> <button onclick="removeFromCart(\'' + item + '\')">Remove</button>';
+            // Append the list item to the cart list
+            cartList.appendChild(li);
+        });
+    }
+
+    // Function to remove a product from the cart
+    function removeFromCart(productName) {
+        // Find the index of the product in the cartItems array
+        var index = cartItems.indexOf(productName);
+        // If the product is found in the cartItems array
+        if (index !== -1) {
+            // Remove the product from the cartItems array
+            cartItems.splice(index, 1);
+            // Update the cart display
+            updateCart();
+        }
+    }
+
+    // Function to simulate the checkout process
+    function checkout() {
+        // Display an alert indicating that the checkout is complete
+        alert('Checkout complete!');
+        // Clear the cartItems array
+        cartItems = [];
+        // Update the cart display
+        updateCart();
+    }
+</script>
+</body>
+</html>
+

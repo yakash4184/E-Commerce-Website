@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles for the feedback form */
+    .feedback-form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Background image styling */
+    body {
+      background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with your image file */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+</nav>
+
+  
+  <div class="container">
+    <h2 class="text-center mt-5">Feedback Form</h2>
+    <form class="feedback-form mt-4">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="feedback">Feedback</label>
+        <textarea class="form-control" id="feedback" rows="5" placeholder="Enter your feedback"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Feedback</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <!-- CDN (Content Delivery Network). -->
+  <!-- Popper.js library from a CDN  positioning tooltips, popovers, and dropdowns in web applications. .  -->
+  <!-- Bootstrap's JavaScript components and plugins, enabling interactive features like dropdown menus, modals, carousels, and more. -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
